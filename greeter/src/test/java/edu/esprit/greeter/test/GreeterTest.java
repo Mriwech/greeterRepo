@@ -29,6 +29,17 @@ public class GreeterTest
 
 	}
 	
+	@Test
+	public void itShouldSayHelloJava()
+	{
+
+		String result = greeter.sayHello("Java");
+		// System.out.println(result); impossible dans le cas d'un grand projet
+		Assert.assertEquals("Hello jar", result);
+
+
+	}
+	
 	// on s'attend à ce qui cette méthode lève une exception
 	
 	@Test (expected = IllegalArgumentException.class)
